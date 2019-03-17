@@ -1,0 +1,87 @@
+@import "../../../styles/variables.less";
+
+.TablePie {
+  &.showPagination {
+    .ant-table-pagination {
+      display: block;
+    }
+  }
+  &.colResizeable {
+    .react-resizable {
+      position: relative;
+      .react-resizable-handle {
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        bottom: 0;
+        right: -5px;
+        cursor: col-resize;
+      }
+    }
+  }
+  &.colResizeDisable {
+    table {
+      //table-layout: fixed;
+      .ant-table-thead tr, .ant-table-tbody tr {
+        > th, > td {
+          //overflow: hidden;
+          //white-space: nowrap;
+          //text-overflow: ellipsis;
+          //display: inline-block;
+          &.ant-table-selection-column {
+            width: 38px;
+            min-width: 38px;
+          }
+        }
+      }
+      .ant-table-tbody tr {
+        > th, > td {
+          //padding: 6px 8px !important;
+        }
+      }
+    }
+  }
+  &.noBorder {
+    .ant-table{
+      border: none !important;
+      .ant-table-content {
+        .ant-table-header{
+          tr > th {
+            border-bottom: none !important;
+          }
+        }
+        .ant-table-body, .ant-table-body-outer {
+          tr > td {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+  &.noBodyBorder {
+    .ant-table-content {
+      .ant-table-body, .ant-table-body-outer {
+        tr > td {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  .ant-table-content {
+    .ant-table-header {
+      background-color: @bg_panel_hd;
+      tr > th {
+        background-color: @bg_panel_hd !important;
+      }
+    }
+  }
+}
+
+.ant-table-header {
+  margin-bottom: 0 !important;
+  overflow: hidden !important;
+}
+
+.ant-table-pagination {
+  display: none;
+}

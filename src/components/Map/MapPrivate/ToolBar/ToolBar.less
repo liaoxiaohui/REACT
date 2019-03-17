@@ -1,0 +1,139 @@
+@import "../../../../styles/variables.less";
+
+.transition(@props) {
+  transition: @props 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.border_tp_radius(@radius:30px) {
+  border-top-left-radius: @radius;
+  border-top-right-radius: @radius;
+}
+
+.border_bt_radius(@radius:30px) {
+  border-bottom-left-radius: @radius;
+  border-bottom-right-radius: @radius;
+}
+
+.ToolBar {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  margin-top: -139px;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px @border_shadow;
+  opacity: @opacity_bar;
+  .ToolsCell {
+    background-color: @bg_bar_cell;
+    border-bottom-color: #798591;
+    .tools_btn {
+      background: transparent;
+      border-radius: 0;
+      color: #FFF;
+      &:hover, &.selected {
+        background-color: @color_theme !important;
+        .transition(background-color)
+      }
+    }
+    &.first {
+      height: 34px;
+      .border_tp_radius();
+      .tools_btn {
+        .border_tp_radius();
+      }
+    }
+    &.last {
+      height: 34px;
+      .border_bt_radius();
+      .tools_btn {
+        .border_bt_radius();
+      }
+    }
+    &.has_sub_menu {
+      .tools_btn {
+        &:before {
+          border: 3px solid @bg_bar_cell;
+          border-bottom-color: transparent;
+          border-left-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.map_share {
+  width: 200px;
+  .map_share_btn_group {
+    padding-top: 15px;
+    text-align: right;
+    .ant-btn {
+      margin-left: 10px;
+    }
+  }
+}
+
+.help_tips {
+  width: 200px;
+  height: 100px;
+}
+
+.tools_map {
+  width: 120px;
+  .divide_line_h {
+    margin: 5px 15px;
+  }
+  .tools_cell_sub {
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 30px;
+    &:hover {
+      background-color: @bg_tool_cell_hover;
+      .transition(background-color);
+      .tools_cell_sub_icon {
+        color: @color_theme;
+        .transition(color);
+      }
+      .tools_cell_sub_txt {
+        color: @color_theme;
+        .transition(color);
+      }
+    }
+    .tools_cell_sub_icon {
+      font-size: 19px;
+      color: @color_title;
+      margin-right: 5px;
+      &.sub_icon_3 {
+        font-size: 16px;
+        margin-right: 8px;
+      }
+      &.sub_icon_4 {
+        font-size: 20px;
+      }
+      &.sub_icon_5 {
+        font-size: 14px;
+        margin-right: 0;
+      }
+      &.sub_icon_11 {
+        font-size: 16px;
+        margin-right: 8px;
+      }
+    }
+    .tools_cell_sub_txt {
+      color: @color_title;
+    }
+  }
+}
+
+.ant-popover-title {
+  min-width: 210px;
+}
+
+.popover_toolset {
+  .ant-popover-title {
+    min-width: 120px;
+  }
+  .ant-popover-inner-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

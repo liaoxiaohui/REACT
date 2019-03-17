@@ -1,0 +1,36 @@
+@import "../../../styles/variables";
+
+.transition(@props) {
+  transition: @props 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.avatar_with_text {
+  text-align: center;
+  margin-left: 20px;
+  .has_stroke {
+    box-shadow: 0 2px 8px @border_shadow;
+  }
+  .avatar_tp {
+    display: inline-block;
+    .ant-avatar {
+      display: table;
+      .iconfont {
+        vertical-align: middle;
+        text-align: center;
+        display: table-cell;
+      }
+    }
+  }
+  .avatar_bt {
+    margin-top: 5px;
+    font-weight: 600;
+    color: @color_icon_text;
+    .transition(color);
+  }
+  &:hover {
+    .avatar_bt {
+      color: @color_theme;
+      .transition(color);
+    }
+  }
+}

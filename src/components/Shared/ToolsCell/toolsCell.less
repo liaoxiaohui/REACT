@@ -1,0 +1,63 @@
+@import "../../../styles/variables.less";
+
+.border_tp_radius(@radius:30px) {
+  border-top-left-radius: @radius;
+  border-top-right-radius: @radius;
+}
+.transition(@props){
+  transition: @props 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.border_bt_radius(@radius:30px) {
+  border-bottom-left-radius: @radius;
+  border-bottom-right-radius: @radius;
+}
+
+.ToolsCell {
+  background: #f8f8f8;
+  width: 32px;
+  height: 30px;
+  position: relative;
+  border-bottom: 1px solid @border;
+  &.first {
+    height: 34px;
+    .border_tp_radius();
+    .tools_btn {
+      .border_tp_radius();
+    }
+  }
+  &.last {
+    height: 34px;
+    .border_bt_radius();
+    .tools_btn {
+      .border_bt_radius();
+    }
+  }
+  &.has_sub_menu {
+    .tools_btn {
+      &:before {
+        bottom: 0 !important;
+        left: 0 !important;
+        top: initial !important;
+        right: initial !important;
+        display: inline-block !important;
+        border-radius: 0 !important;
+        width: 0;
+        height: 0;
+        border: 3px solid transparent;
+        border-bottom-color: @color_title;
+        border-left-color: @color_title;
+      }
+    }
+  }
+  .tools_btn {
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    &:hover, &.selected {
+      background-color: @bg_tool_cell_hover !important;
+      .transition(background-color)
+    }
+  }
+}

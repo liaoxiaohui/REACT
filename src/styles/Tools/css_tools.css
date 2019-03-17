@@ -1,0 +1,342 @@
+/*******常用工具型全局样式********/
+html, body {
+    height: 100%;
+}
+
+i.g_red {
+    color: #e4393c;
+    font-style: normal;
+}
+
+i.g_green {
+    color: #57A64A;
+    font-style: normal;
+}
+.g_word_hide {
+    overflow: hidden;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 100%;
+}
+.g_word_break {
+    word-break: break-all;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.g_text_multi {
+    table-layout: fixed;
+    word-break: break-all;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: normal;
+}
+/***阴影start****/
+.g_shadow {
+    -moz-box-shadow: 0 0 10px #E5E5E5;
+    -webkit-box-shadow: 0 0 10px #E5E5E5;
+    -o-box-shadow: 0 0 10px #E5E5E5;
+    box-shadow: 0 0 10px #E5E5E5;
+}
+
+.g_b_shadow {
+    -moz-box-shadow: 0 3px 3px #E5E5E5;
+    -webkit-box-shadow: 0 3px 3px #E5E5E5;
+    -o-box-shadow: 0 3px 3px #E5E5E5;
+    box-shadow: 0 3px 3px #E5E5E5;
+}
+
+.g_shadow_out {
+    -webkit-box-shadow: 0 0 10px #0CC;
+    -moz-box-shadow: 0 0 10px #0CC;
+    -o-box-shadow: 0 0 10px #0CC;
+    box-shadow: 0 0 10px #0CC;
+}
+
+.g_shadow_in {
+    -webkit-box-shadow: 0 0 10px #0CC inset;
+    -moz-box-shadow: 0 0 10px #0CC inset;
+    -o-box-shadow: 0 0 10px #0CC inset;
+    box-shadow: 0 0 10px #0CC inset;
+}
+
+.g_disabled {
+    background: #E4E4E4;
+    color: #ADADAD;
+    pointer-events: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.g_btn_shadow {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.g_btn_shadow:hover {
+    -moz-box-shadow: 0 0 10px #0cc;
+    -webkit-box-shadow: 0 0 10px #0cc;
+    -o-box-shadow: 0 0 10px #0cc;
+    box-shadow: 0 0 10px #0cc;
+}
+
+.g_btn_shadow_inset {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.g_btn_shadow_inset:hover,
+.g_btn_shadow_inset:focus {
+    -moz-box-shadow: 0 0 8px #2B9AF3 inset !important;
+    -webkit-box-shadow: 0 0 8px #2B9AF3 inset !important;
+    -o-box-shadow: 0 0 8px #2B9AF3 inset !important;
+    box-shadow: 0 0 8px #2B9AF3 inset !important;
+    border: 1px solid transparent !important;
+}
+
+/***阴影end****/
+
+/**无宽度边框start**/
+.g_no_width_border,
+.g_no_width_border_radius,
+.g_no_width_border_lt,
+.g_no_width_border_rt,
+.g_no_width_border_tp,
+.g_no_width_border_bt{
+    position: relative;
+}
+
+.g_no_width_border:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #EDEDED;
+    pointer-events: none;
+}
+
+.g_no_width_border_radius:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #EDEDED;
+    border-radius: .5rem;
+    pointer-events: none;
+}
+
+.g_no_width_border_lt:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid #EDEDED;
+    pointer-events: none;
+}
+
+.g_no_width_border_rt:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 1px solid #EDEDED;
+    pointer-events: none;
+}
+
+.g_no_width_border_tp:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #EDEDED;
+    pointer-events: none;
+}
+
+.g_no_width_border_bt:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #EDEDED;
+    pointer-events: none;
+}
+
+/**无宽度边框end**/
+/*****圆角或圆角阴影start*****/
+
+.g_shadow_radius {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 10px #9CB2BC;
+    -o-box-shadow: 0 0 10px #9CB2BC;
+    -webkit-box-shadow: 0 0 10px #9CB2BC;
+    box-shadow: 0 0 10px #9CB2BC;
+}
+
+.g_border_radius {
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.g_border_radius_5 {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.g_border_radius_5_tp {
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.g_border_radius_5_bt {
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.g_border_radius_3 {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.g_border_radius_3_tp {
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.g_border_radius_3_bt {
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+}
+
+.g_border_radius_3_rt {
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.g_border_radius_3_lt {
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+/*****圆角或圆角阴影end*****/
+.g_float_lt {
+    float: left;
+}
+
+.g_clear_fix {
+    zoom: 1;
+    display: block;
+}
+
+.g_clear_fix:before,
+.g_clear_fix:after {
+    content: "";
+    display: table; /*block*/
+    height: 0;
+    visibility: hidden;
+}
+
+.g_clear_fix:after {
+    clear: both;
+}
+
+.g_bgWite {
+    background-color: #fff;
+}
+
+.g_overflow_hidden {
+    overflow: hidden;
+}
+
+.g_hide {
+    display: none;
+}
+
+.g_show {
+    display: block;
+}
+
+.g_inner {
+    width: 980px;
+    margin: 0 auto !important;
+    position: relative;
+}
+
+.g_no_act_border {
+    outline: none !important;
+}
+
+.g_opacity {
+    filter: Alpha(opacity=30);
+    -moz-opacity: 0.3;
+    opacity: 0.3;
+}
+
+.g_img_hover:hover {
+    filter: Alpha(opacity=85);
+    -moz-opacity: 0.85;
+    opacity: 0.85;
+}
+
+.g_margin_0 {
+    margin: 0 !important;
+}
+
+.g_before:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 0;
+    margin-right: 5px;
+}
+
+.g_select_disable {
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/**设置元素透明度而不影响文字**/
+.g_opacity_txt {
+    background-color: rgba(25, 149, 250, 0.3) !important; /* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */
+}
+
+.g_opacity_txt.black {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.g_opacity_txt .g_txt_color {
+    color: #FFFFFF;
+}

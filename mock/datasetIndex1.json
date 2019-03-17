@@ -1,0 +1,13 @@
+[
+    {
+        "id": 4, 
+        "num": "03", 
+        "dataSetName": "数据集x", 
+        "description": "测试", 
+        "operation_time": "2018/01/11 15:20:25", 
+        "range": 2, 
+        "dataSize": 2, 
+        "barNumber": 2, 
+        "type": 1
+    }
+]

@@ -1,0 +1,68 @@
+/*引入全局文件*/
+@import "../variables.less";
+
+.container_root {
+  .container_outer {
+    height: 100%;
+    .container_inner {
+      height: 100%;
+    }
+  }
+}
+
+.ant-popover {
+  .ant-popover-inner {
+    .ant-popover-title {
+      background-color: @bg_title_hd;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+  }
+}
+
+.ant-tooltip-inner {
+  background-color: rgba(31, 51, 73, 0.75);
+}
+
+.ant-tooltip-placement-bottom,
+.ant-tooltip-placement-bottomLeft,
+.ant-tooltip-placement-bottomRight {
+  .ant-tooltip-arrow {
+    border-bottom-color: rgba(31, 51, 73, 0.75);
+  }
+}
+
+.ant-tooltip-placement-top,
+.ant-tooltip-placement-topLeft,
+.ant-tooltip-placement-topRight {
+  .ant-tooltip-arrow {
+    border-top-color: rgba(31, 51, 73, 0.75);
+  }
+}
+
+.ant-tooltip-placement-left,
+.ant-tooltip-placement-leftTop,
+.ant-tooltip-placement-leftBottom {
+  .ant-tooltip-arrow {
+    border-left-color: rgba(31, 51, 73, 0.75);
+  }
+}
+
+.ant-tooltip-placement-right,
+.ant-tooltip-placement-rightTop,
+.ant-tooltip-placement-rightBottom {
+  .ant-tooltip-arrow {
+    border-right-color: rgba(31, 51, 73, 0.75);
+  }
+}
+
+.pagination_wrap {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.ant-btn {
+  &.btn_no_border {
+    border: none !important;
+  }
+}

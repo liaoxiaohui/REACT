@@ -1,0 +1,20 @@
+#存放本项目说明文档
+项目搭建需要准备一下开发环境
+#node环境
+[版本]
+v9.2.0
+[官网地址]
+http://nodejs.cn/
+#npm包管理器（node已经集成，不需要单独安装）
+[版本]
+v5.6.0
+[官网地址]
+https://www.npmjs.com/
+#安装淘宝镜像
+[版本]
+v5.1.1
+[官网地址]
+https://npm.taobao.org/
+[安装]
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+注：安装成功之后，就可以使用cnpm进行包管理，能够快速提高包安装速度

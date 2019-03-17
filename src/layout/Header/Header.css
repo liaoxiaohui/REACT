@@ -1,0 +1,136 @@
+/*头部标题栏组件样式*/
+/**颜色相关**/
+/**背景相关**/
+/**提示相关**/
+/**透明度相关**/
+/**字体相关**/
+.header {
+  max-height: 65px;
+  min-height: 65px;
+}
+.header .navbar-default {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: .5rem 1rem;
+}
+.header .header_inner .navbar-nav {
+  height: 4.5rem;
+}
+.header .header_inner .navbar-nav a {
+  color: #fff;
+  margin: 0 1rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+.header .header_inner .navbar_collapse {
+  display: flex !important;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.header .header_inner .navbar_collapse:before,
+.header .header_inner .navbar_collapse:after {
+  display: none;
+}
+.header .header_inner .login_info {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: -10px;
+  flex-basis: 20%;
+}
+.header .header_inner .login_info a {
+  font-size: 13px;
+  margin: 0 .5rem;
+  padding: 0;
+}
+.header .header_inner .login_info a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.header .header_inner .login_info a.tools {
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url(../../assets/images/common/icon.png) no-repeat;
+}
+.header .header_inner .login_info a.user_messages {
+  background-position: -1px -20px;
+}
+.header .header_inner .login_info a.user_theme {
+  background-position: -30px -19px;
+}
+.header .header_inner .login_info a.user_icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2rem;
+  position: relative;
+  background: url(../../assets/images/common/def_user.png) no-repeat;
+  background-size: contain !important;
+}
+.header .header_inner .login_info a.user_icon.user_admin {
+  background: url(../../assets/images/common/def_admin.png) no-repeat;
+}
+.header .header_inner .login_info a.user_menu {
+  text-decoration: none;
+}
+.header .header_inner .login_info .line_verti {
+  margin: 0 0.3rem;
+  height: 2rem;
+  width: 1px;
+  position: relative;
+  top: 0;
+  background: #A0C1FA;
+}
+.header .header_inner .logo_site {
+  background: url(../../assets/images/common/logo.png) left center no-repeat;
+  background-size: contain;
+  height: 42px;
+  flex-basis: 20%;
+  float: left;
+}
+.header .header_inner .nav_main_wrap {
+  width: 62%;
+  display: inline-block;
+  text-align: center;
+}
+.header .header_inner .nav_main_wrap .nav_main_item {
+  height: 100%;
+  float: none;
+  display: inline-block;
+}
+.header .header_inner .nav_main_wrap .nav_main_item a {
+  padding: 1rem 0 .8rem;
+  font-size: 1.6rem;
+}
+.header .header_inner .nav_main_wrap .nav_main_item a:before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 18px;
+  top: 4px;
+  margin-right: 0.2rem;
+  background: url(../../assets/images/common/icon.png) no-repeat;
+}
+.header .header_inner .nav_main_wrap .nav_main_item a:hover,
+.header .header_inner .nav_main_wrap .nav_main_item a.selected {
+  color: #fff;
+  border-bottom: 3px solid #affe4b;
+}
+.header .header_inner .nav_main_wrap .nav_0 a:before {
+  background-position: -1px -1px;
+}
+.header .header_inner .nav_main_wrap .nav_1 a:before {
+  background-position: -23px -1px;
+}
+.header .header_inner .nav_main_wrap .nav_2 a:before {
+  background-position: -86px -1px;
+}
+.header .header_inner .nav_main_wrap .nav_3 a:before {
+  background-position: -44px -1px;
+}
+.header .header_inner .nav_main_wrap .nav_4 a:before {
+  background-position: -64px -1px;
+}
+/*# sourceMappingURL=Header.css.map */

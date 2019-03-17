@@ -1,0 +1,112 @@
+@import "../../../../styles/variables.less";
+
+.MapSearch {
+  height: 100%;
+  .classified {
+    padding: 12px;
+    height: 100%;
+    .classified_inner {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: @bg_search_classified;
+      .classified_item {
+        display: block;
+        float: left;
+        padding: 13px 22px;
+        width: 85px;
+        cursor: pointer;
+        border-right: 1px solid #FFF;
+        border-bottom: 1px solid #FFF;
+        .avatar_with_text {
+          margin: 0;
+          .classify_avatar {
+            .iconfont {
+              font-size: 18px;
+            }
+          }
+          .classify_avatar_3 {
+            .iconfont {
+              font-size: 20px;
+            }
+          }
+          .classify_avatar_5 {
+            .iconfont {
+              font-size: 22px;
+            }
+          }
+        }
+        &.no_border_right {
+          border-right-color: transparent;
+        }
+        &.no_border_bottom {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+  }
+  .search_result_list {
+    padding: 12px 0;
+    height: 100%;
+    .search_result_scroll {
+      height: ~'calc(100% - 32px - 5px - 25px - 5px)';
+      .search_result_inner {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.search_result_item {
+  padding: 10px 0 10px 12px;
+  border-bottom: 1px solid @border;
+  cursor: pointer;
+  &:hover {
+    background-color: @bg_classified_item_hover;
+  }
+  .item_tp {
+    line-height: 28px;
+    .serial_number {
+      display: inline-block;
+      line-height: 35px;
+      margin-right: 5px;
+      float: left;
+      text-align: center;
+      z-index: 200;
+      position: relative;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 35px;
+      background: url("../../../../assets/images/location_5.png") no-repeat;
+      background-size: contain;
+      .number {
+        color: #FFF;
+        position: relative;
+        top: -10px;
+        font-style: normal;
+        font-size: 13px;
+      }
+    }
+    .item_title {
+      color: @color_title;
+      font-size: @font_size + 2;
+    }
+    .street_scene {
+
+    }
+  }
+  .item_bt {
+    line-height: 28px;
+    color: @color_text;
+  }
+}
+
+.popover_filter {
+  .ant-popover-title {
+    background-color: #FFF !important;
+  }
+}
